@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="src/styles.css" />
+    <script src="src/index.js" defer></script>
+    <title>Calculdora</title>
+</head>
+
+<body>
+    <div id="app">
+        <div id="wrapper">
+            <span>
+                <input type="text" id="display" onpaste="return false">
+            </span><br>
+            <span>
+                <input type="button" class="operator" id="setNumber" data-buttons="KeyX" value="M+"
+                    title="Gravar (ctrl + x)" disabled>
+                <input type="button" class="operator" id="recoverNumber" data-buttons="KeyV" value="MR"
+                    title="Recuperar (ctrl + v)" disabled>
+                <input type="button" class="operator" value="⇐" data-buttons="Backspace" title="Deletar (Backspace)">
+                <input type="button" class="operator" value="C" data-buttons="Escape" title="Limpar (Esc)">
+            </span><br>
+            <span>
+                <input type="button" class="numbers" value="7">
+                <input type="button" class="numbers" value="8">
+                <input type="button" class="numbers" value="9">
+                <input type="button" value="/">
+            </span><br>
+            <span>
+                <input type="button" class="numbers" value="4">
+                <input type="button" class="numbers" value="5">
+                <input type="button" class="numbers" value="6">
+                <input type="button" value="*">
+            </span><br>
+            <span>
+                <input type="button" class="numbers" value="1">
+                <input type="button" class="numbers" value="2">
+                <input type="button" class="numbers" value="3">
+                <input type="button" value="-">
+            </span><br>
+            <span>
+                <input type="button" class="numbers" value="0">
+                <input type="button" class="commma" value=",">
+                <input type="button" class="equals" data-buttons="Enter" value="=">
+                <input type="button" value="+">
+            </span><br>
+            <footer>
+                <p>Desenvolvido por Luciano Minervino</p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
